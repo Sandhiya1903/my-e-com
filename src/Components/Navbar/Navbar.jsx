@@ -10,8 +10,8 @@ function Navbar() {
     <div className='navbar'>
        <div className='nav-logo'>  
 
-       <img src={logo} alt=""/>
-       <p>SHOPIFY</p>
+       <img className='nav-img' src={logo} alt=""/>
+       <p>Fashora</p>
        </div>
 
        <ul className='nav-menu'>
@@ -24,9 +24,7 @@ function Navbar() {
        <div className='nav-login-cart'>
         <Link to='/login'><button>Login </button></Link>
         <Link to='/cart'><img src={cart_icon} alt=''/></Link>
-        <div className='nav-cart-count'>
-         0
-        </div>
+      
        </div>
       
     </div>

@@ -1,0 +1,71 @@
+.banner {
+    display: block;
+    width: 100%;
+    height: 80%;
+}
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+    gap: 10px;
+    text-transform: uppercase;
+}
+
+.sale-flat,
+.sale-off {
+    font-size: 48px;
+    font-weight: 700;
+    color: #d9534f; /* Bold red for attention */
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.sale-percent {
+    font-size: 120px;
+    font-weight: 800;
+    color: #090909; /* Black for contrast */
+    margin: 0;
+    line-height: 0.9;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero-left h2,
+.hero-left h1 {
+    font-family: 'Poppins', sans-serif; /* Modern and clean font */
+}
+
+.hero-left {
+    border-left: 5px solid #d9534f; /* Adds a bold separator for emphasis */
+    padding-left: 20px;
+}
+
+.shopcategory-sort{
+    color: #454545;
+    font-size: 35px;
+    font-weight: 600;
+}
+.shopcategory-indexsort {
+    color: #454545;
+    font-size: 25px;
+    font-weight: 600;
+}
+.shopcategory-sort img{
+    width: 30px;
+}
+.shopcategory-products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    margin-top: 50px;
+    gap:30px;
+}
+.shop-category{
+    margin: 3%;
+}
+.shop-category .banner{
+    height: 50%;
+    width: 100%;
+  
+}

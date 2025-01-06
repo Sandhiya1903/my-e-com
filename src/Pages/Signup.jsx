@@ -1,27 +1,43 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './CSS/LoginSignup.css'; // Importing the separate CSS file
+import './CSS/LoginSignup.css'; // Reusing the same CSS file
 
-export default function LoginSignup() {
+export default function Signup() {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Login attempt with:', { email, password });
+    console.log('Signup attempt with:', { name, email, password });
   };
 
   return (
     <div className="login-signup-container">
       <div className="login-box">
         <div className="login-header">
-          <h2>Welcome back</h2>
-          <p>Please sign in to your account</p>
+          <h2>Create an Account</h2>
+          <p>Join us and enjoy exclusive features!</p>
         </div>
         <form className="login-form" onSubmit={handleSubmit}>
           <div className="input-group">
+            <label htmlFor="name" className="sr-only">
+              Full Name
+            </label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="input-field"
+              placeholder="Full Name"
+            />
+          </div>
+          <div className="input-group">
             <label htmlFor="email" className="sr-only">
-              Email address
+              Email Address
             </label>
             <input
               id="email"
@@ -31,7 +47,7 @@ export default function LoginSignup() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="input-field"
-              placeholder="Email address"
+              placeholder="Email Address"
             />
           </div>
           <div className="input-group">
@@ -49,20 +65,11 @@ export default function LoginSignup() {
               placeholder="Password"
             />
           </div>
-          <div className="actions">
-            <div className="remember-me">
-              <input id="remember-me" name="remember-me" type="checkbox" />
-              <label htmlFor="remember-me">Remember me</label>
-            </div>
-            <Link to="/forgot-password" className="forgot-password">
-              Forgot your password?
-            </Link>
-          </div>
           <button type="submit" className="submit-button">
-            Sign in
+            Sign up
           </button>
           <div className="signup-link">
-            Don't have an account? <Link to="/signup">Sign up</Link>
+            Already have an account? <Link to="/login">Sign in</Link>
           </div>
         </form>
       </div>

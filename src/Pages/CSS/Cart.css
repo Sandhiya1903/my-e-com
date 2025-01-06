@@ -1,0 +1,134 @@
+.cart {
+  padding: 20px;
+  max-width: 100vh;
+  margin: 0.1% auto;
+  margin-top: 1%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.cart-page-none {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+  font-size: x-large;
+  text-align: center;
+  
+}
+.cart-page{
+  height: 100vh;
+}
+.cart-page-none button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: large;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-page-none button:hover {
+  background-color: #444;
+}
+
+.cart-page-none a {
+  text-decoration: none;
+}
+
+.cart-items li{
+  text-decoration: none;
+}
+
+.cart h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  gap: 16px;
+}
+
+.cart-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
+}
+
+.cart-items:hover {
+  background-color: #f1f1f1;
+}
+
+.cart-items img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+.cart-item {
+  display: flex;
+  align-items: center; /* Vertically center-align items */
+  justify-content: space-between; /* Add spacing between the child elements */
+  padding: 16px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  transition: box-shadow 0.3s ease;
+  gap: 16px; /* Add spacing between elements */
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.cart-item-details {
+  flex-grow: 1; /* Allow the details section to take up available space */
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center-align text vertically */
+}
+
+.cart-item-details h3,
+.cart-item-details p {
+  margin: 4px 0; /* Uniform margin for better spacing */
+}
+
+.delete-button {
+  padding: 8px 16px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: center; /* Center-align the button vertically */
+}
+
+.delete-button:hover {
+  background-color: #bd2130;
+  transform: scale(1.05);
+}
