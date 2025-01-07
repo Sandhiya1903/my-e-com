@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ShopContext } from "../Context/ShopContext";
 import "./CSS/Product.css";
@@ -8,6 +8,11 @@ function Product() {
   const { all_product, addToCart } = useContext(ShopContext);
   const [selectedSize, setSelectedSize] = useState("");
   const [showPopup, setShowPopup] = useState(false);
+
+  // Scroll to the top of the page when the component is mounted
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   if (!all_product || all_product.length === 0) {
     return <div>Loading...</div>;
@@ -45,7 +50,9 @@ function Product() {
             {["XS", "S", "M", "L", "XL", "XXL"].map((size) => (
               <button
                 key={size}
-                className={`size-button ${selectedSize === size ? "selected" : ""}`}
+                className={`size-button ${
+                  selectedSize === size ? "selected" : ""
+                }`}
                 onClick={() => setSelectedSize(size)}
               >
                 {size}

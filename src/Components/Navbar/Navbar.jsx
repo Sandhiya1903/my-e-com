@@ -15,10 +15,10 @@ function Navbar() {
        </div>
 
        <ul className='nav-menu'>
-        <li onClick={()=>{setMenu("shop")}}><Link style={ {textDecoration:'none'}}to='/'>shop</Link>{menu==="shop"? <hr/>:<></>}</li>
-        <li onClick={()=>{setMenu("mens")}}><Link style={ {textDecoration:'none'}}to='/mens'>men</Link>{menu==="mens"? <hr/>:<></>}</li>
-        <li onClick={()=>{setMenu("womens")}}><Link style={ {textDecoration:'none'}}to='/womens'>women</Link>{menu==="womens"? <hr/>:<></>}</li>
-        <li onClick={()=>{setMenu("kids")}}><Link style={ {textDecoration:'none'}}to='/kids'>kids</Link>{menu==="kids"? <hr/>:<></>}</li>
+        <li onClick={()=>{setMenu("shop")}}><Link style={ {textDecoration:'none' , color:"black"}}to='/'>shop</Link>{menu==="shop"? <hr/>:<></>}</li>
+        <li onClick={()=>{setMenu("mens")}}><Link style={ {textDecoration:'none', color:"black"}}to='/mens'>men</Link>{menu==="mens"? <hr/>:<></>}</li>
+        <li onClick={()=>{setMenu("womens")}}><Link style={ {textDecoration:'none', color:"black"}}to='/womens'>women</Link>{menu==="womens"? <hr/>:<></>}</li>
+        <li onClick={()=>{setMenu("kids")}}><Link style={ {textDecoration:'none', color:"black"}}to='/kids'>kids</Link>{menu==="kids"? <hr/>:<></>}</li>
        </ul>
        
        <div className='nav-login-cart'>

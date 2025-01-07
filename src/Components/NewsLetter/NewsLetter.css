@@ -1,14 +1,12 @@
 .newsletter {
-  width: 655;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: auto;
-  padding: 0px 140px;
-  margin-bottom: 150px;
-  background: linear-gradient(180deg,rgb(253, 182, 169)0%, #e1ffea22 60%);
+
+  background: linear-gradient(100deg, rgba(0, 0, 0, 0.211) 0%, #e1ffea22 60%);
   gap: 30px;
 }
 .newsletter h1 {
@@ -54,7 +52,7 @@
 .newsletter div button {
   width: 200px;
   height: 80px;
-  margin-top: -0.5%; 
+  margin-top: -0.5%;
   background: black;
   border-radius: 65px;
   color: white;

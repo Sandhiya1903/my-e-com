@@ -1,16 +1,16 @@
 .offers {
   display: flex;
   height: 100vh;
-
-  margin-top: 5%;
+  width: 100vh;
+  margin: 5%;
   background: linear-gradient(180deg, rgb(253, 182, 169) 0%, #e1ffea22 60%);
   flex-direction: row;
-  
 }
 
 .offers-left {
   flex: 1;
   display: flex;
+
   flex-direction: column;
   justify-content: center;
 }
@@ -50,7 +50,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
- 
 }
 
 @media screen and (max-width: 1280px) {

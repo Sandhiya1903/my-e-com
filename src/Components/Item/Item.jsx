@@ -1,13 +1,12 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React from "react";
 import "./Item.css";
+import { useNavigate } from "react-router-dom";
 
-function Item({ id, name, image, new_price, old_price, onAddToCart }) {
-
-  const navigate = useNavigate(); 
+function Item({ id, name, image, new_price, old_price }) {
+  const navigate = useNavigate();
 
   const handleNavigateToProduct = () => {
-    navigate(`/product/${id}`);
+    navigate(`/product/${id}`, { state: { id } });
   };
 
   return (
@@ -18,10 +17,6 @@ function Item({ id, name, image, new_price, old_price, onAddToCart }) {
         <span className="new-price">${new_price}</span>{" "}
         <span className="old-price">${old_price}</span>
       </p>
-     <Link to="/product"><button className="add-to-cart" onClick={handleNavigateToProduct}>
-        Shop Now
-      </button>
-</Link> 
     </div>
   );
 }
